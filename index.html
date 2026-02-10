@@ -314,5 +314,21 @@
             }
         }
     </script>
+    <!-- CALL BUTTON -->
+<button id="callAgentBtn">Call for Custom Motivational Frames</button>
+
+<script>
+  document.getElementById("callAgentBtn").addEventListener("click", function () {
+    if (window.OmnidimWidget) {
+      window.OmnidimWidget.open();
+    } else {
+      alert("Voice agent is loading, please try again in a moment.");
+    }
+  });
+</script>
+
+<!-- OMNIDIM VOICE AGENT -->
+<script id="omnidimension-web-widget" async src="https://omnidim.io/web_widget.js?secret_key=9e4b7b19805bb84815b52cced83e9682"></script>
 </body>
+
 </html>
